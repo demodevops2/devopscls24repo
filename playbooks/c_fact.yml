@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Get custom facts
+    debug:
+      msg: The custom fact is {{ansible_local.date_time}}
+

@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  vars:
+   Countries:
+     - India
+     - Nepal
+     - United States
+     - China
+     - Singapore
+     - France
+ 
+  tasks:
+  - name: List variable in Ansible
+    debug:
+      msg: "{{ Countries }}"

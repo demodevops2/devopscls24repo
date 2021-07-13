@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  vars:
+   demo_var1: Welcome to The SkillPedia! 
+  tasks:
+  - name: Variable Example in Ansible
+    debug:
+      msg: "{{ demo_var1 }}"
